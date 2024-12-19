@@ -1,0 +1,73 @@
+.container {
+  width: 100%;
+  height: 100vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: linear-gradient(140deg, rgb(102, 102, 203), rgb(11, 11, 143));
+}
+
+.calculator {
+  padding: 2rem;
+
+  border-radius: 1rem;
+
+  background-color: rgba(255, 255, 255, 0.734);
+}
+
+form input {
+  border: none;
+  border-radius: 1rem;
+
+  outline: 0;
+
+  width: 6rem;
+  height: 6rem;
+
+  background-color: rgb(91, 91, 150);
+
+  margin: 0.2rem;
+
+  font-size: 1.6rem;
+  color: white;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 1.3;
+
+  cursor: pointer;
+}
+
+form input[type="button"]:hover {
+  background-color: rgba(91, 91, 150, 0.9);
+}
+
+form .display {
+  display: flex;
+  justify-content: flex-end;
+
+  margin: 0.5rem 0 1.5rem 0;
+}
+
+form .display input {
+  text-align: right;
+
+  flex: 1;
+
+  font-size: 4rem;
+
+  padding: 0.5rem 1rem;
+
+  background-color: rgb(42, 42, 42);
+
+  caret-color: transparent;
+}
+
+form input.equal {
+  width: 100%;
+  max-width: 12.4rem;
+}
